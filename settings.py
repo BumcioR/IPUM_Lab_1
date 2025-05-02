@@ -6,6 +6,7 @@ from pydantic import validator
 class Settings(BaseSettings):
     ENVIRONMENT: str
     APP_NAME: str
+    API_KEY: str  # dodany
 
     @validator("ENVIRONMENT")
     def validate_environment(cls, value):
