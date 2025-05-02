@@ -4,10 +4,8 @@ import yaml
 
 
 def load_secrets(path="secrets.yaml") -> None:
-    """Wczytuje odszyfrowany plik YAML jako zmienne środowiskowe"""
     if not os.path.exists(path):
-        print(f"Secrets file {path} does not exist.")
-        return
+        raise FileNotFoundError(f"{path} does not exist. Did you decrypt it?")
 
     with open(path, "r") as f:
         secrets = yaml.safe_load(f)
