@@ -1,0 +1,23 @@
+# Python virtual environments
+.venv
+__pycache__/
+*.pyc
+*.pyo
+
+# Log files
+*.log
+
+# OS / editor artifacts
+.DS_Store
+Thumbs.db
+
+# Git & VCS
+.git
+.gitignore
+
+# IDE/editor folders
+.vscode/
+.idea/
+
+# Jupyter notebooks (jeśli niepotrzebne w kontenerze)
+*.ipynb
