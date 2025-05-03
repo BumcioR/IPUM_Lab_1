@@ -15,3 +15,11 @@ you will have a local server providing ML model predictions.
 7. FastAPI web server
 8. Serving ML model
 9. Containerization (Docker, Docker Compose)
+
+## Final Check (Docker Compose)
+
+The FastAPI server was successfully launched using `docker compose up`.
+
+- The `/docs` endpoint is available locally at `http://localhost:8000/docs`.
+- The `ml-app` image was built and the container started successfully.
+- The `/predict` endpoint was tested and returned correct model predictions.
