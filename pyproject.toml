@@ -12,7 +12,11 @@ dependencies = [
     "uvicorn>=0.29.0",
     "fastapi>=0.110.0",
     "joblib>=1.4.0",
-    "scikit-learn>=1.4.0",   # nowość
-    "pandas>=2.2.0",         # nowość
-    "numpy>=1.26.0"          # nowość
+    "scikit-learn>=1.4.0",
+    "pandas>=2.2.0",
+    "numpy>=1.26.0",
+    "pytest>=7.4.0",              # do testów
+    "pytest-dotenv>=0.5.2",       # ładowanie .env.test
+    "httpx>=0.26.0",              # do TestClient
+    "typing-extensions>=4.9.0"    # zgodna z pydantic-core
 ]
